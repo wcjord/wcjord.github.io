@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Will Jordan-Cooley — Learning systems, game design, cognitive science</title>
+<meta name="description" content="Blending cognitive science, game design and technology to create next-generation learning systems. Portfolio of Will Jordan-Cooley — founder of Pangea Chat, designer of BrainPOP's Time Zone X, Sortify and GameUp.">
+<meta name="author" content="Will Jordan-Cooley">
+<link rel="canonical" href="https://www.willjordancooley.com/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Will Jordan-Cooley">
+<meta property="og:description" content="Blending cognitive science, game design and technology to create next-generation learning systems.">
+<meta property="og:url" content="https://www.willjordancooley.com/">
+<meta property="og:image" content="assets/img/pangea-chat.png">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
+<link rel="preload" as="image" href="assets/img/pangea-chat.png">
+<link rel="stylesheet" href="assets/css/styles.css">
+
+<script>
+  // Set the theme before first paint so there is no flash.
+  (function () {
+    try {
+      var t = localStorage.getItem("theme");
+      if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  })();
+</script>
+</head>
+
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a class="nav__brand" href="#top">Will Jordan-Cooley</a>
+
+    <nav aria-label="Primary">
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#writing">Writing</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <button class="icon-btn theme-toggle" id="themeToggle" type="button" aria-label="Toggle colour theme">
+      <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    </button>
+
+    <button class="icon-btn nav__menu" id="navToggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ================= Hero ================= -->
+  <section class="hero" id="top">
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="wrap hero__inner">
+      <span class="eyebrow"><span class="dot"></span> Founder &amp; CEO, Pangea Chat</span>
+
+      <h1>Learning systems that people<br><span class="grad">actually want to play.</span></h1>
+
+      <p class="hero__lede">
+        Blending cognitive science, game design and technology to create
+        next-generation learning systems.
+      </p>
+
+      <p class="hero__sub">
+        I'm full-time on Pangea Chat, an AI-guided language learning environment built on
+        the Matrix protocol. Before that I designed educational games at BrainPOP &mdash;
+        Time Zone X, Sortify, Guts and Bolts &mdash; and curated GameUp.
+      </p>
+
+      <div class="btn-row">
+        <a class="btn btn--primary" href="https://www.pangeachat.com/" target="_blank" rel="noopener">
+          Try Pangea Chat
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+        </a>
+        <a class="btn btn--ghost" href="#work">See earlier work</a>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <div class="stat__n">9</div>
+          <div class="stat__l">Shipped learning games &amp; products</div>
+        </div>
+        <div class="stat">
+          <div class="stat__n">300+</div>
+          <div class="stat__l">Curriculum topics covered</div>
+        </div>
+        <div class="stat">
+          <div class="stat__n">100+</div>
+          <div class="stat__l">Titles curated for GameUp</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Work ================= -->
+  <section class="section section--sunken" id="work">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <span class="section__kicker">Selected work</span>
+        <h2 class="section__title">Games, apps and assessment systems</h2>
+        <p class="section__sub">
+          Pangea Chat is where all my time goes. Below it is earlier work &mdash; classroom
+          games, mobile apps and the analytics that sat behind them.
+        </p>
+      </div>
+
+      <div class="grid">
+
+        <article class="card card--featured reveal">
+          <div class="card__media">
+            <img src="assets/img/pangea-chat.png" alt="Pangea Chat app start screen showing language flags and a group of friends" width="1310" height="862">
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Pangea Chat</h3>
+            <p class="card__text">
+              Pangea Chat lets you &ldquo;learn any language while texting your friends.&rdquo;
+              It's a human-centered, AI-guided language learning environment built on the
+              Matrix messaging protocol: inline writing assistance as you type, practice
+              exercises generated from your real conversations, task-based conversation
+              activities, and a CEFR-aware bot tutor. Messaging is free; the AI tools are
+              the paid product. Available on iOS, Android and web. I'm founder and CEO,
+              leading product and engineering.
+            </p>
+            <ul class="tags" aria-label="Details">
+              <li class="tag tag--now">Current focus</li>
+              <li class="tag">NLP</li>
+              <li class="tag">Mobile</li>
+            </ul>
+            <a class="card__link" href="https://www.pangeachat.com/" target="_blank" rel="noopener">
+              Try Pangea Chat
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__media">
+            <img src="assets/img/time-zone-x.png" alt="Time Zone X gameplay: Tim and Moby placing historical event cards on a timeline" loading="lazy" width="578" height="432">
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Time Zone X&reg;</h3>
+            <p class="card__text">
+              Time Zone X is a history game designed to span BrainPOP's many movie topics
+              and provide meaningful assessment data to teachers. The game covers 300+
+              topics across Science, Social Studies and Art. Data is collected during game
+              play, analyzed and displayed in the students and teachers MyBP dashboards. I
+              designed the game, managed the development team and led artists and writers
+              in content production.
+            </p>
+            <a class="card__link" href="https://www.brainpop.com/games/timezonex/" target="_blank" rel="noopener">
+              Play
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__media">
+            <img src="assets/img/time-zone-x-v2.png" alt="Time Zone X version 2 prototype interface" loading="lazy" width="1600" height="1074">
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Time Zone X&reg; V2 Prototype</h3>
+            <p class="card__text">
+              While producing content for BrainPOP's Time Zone X, I designed and developed
+              a second version for the game based on user feedback and product goals. V2
+              was not released but you can check out the prototype gameplay in the video
+              below.
+            </p>
+            <a class="card__link" href="https://youtu.be/HBecdbXhRU8" target="_blank" rel="noopener">
+              Watch gameplay video
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__media">
+            <img src="assets/img/guts-and-bolts.png" alt="Guts and Bolts gameplay showing body systems being assembled into a robot" loading="lazy" width="578" height="432">
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Guts and Bolts</h3>
+            <p class="card__text">
+              Guts and Bolts is a K12 classroom game about body systems. Players help Moby
+              build a robotic Tim, both popular characters of the BrainPOP movies. I worked
+              on the BrainPOP design and production team.
+            </p>
+            <a class="card__link" href="https://www.brainpop.com/games/gutsandbolts/" target="_blank" rel="noopener">
+              Play
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__media">
+            <img src="assets/img/ecochains.jpg" alt="Ecochains: Arctic Crisis card game layout" loading="lazy" width="587" height="309">
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Ecochains: Arctic Crisis</h3>
+            <p class="card__text">
+              Ecochains: Arctic Crisis is a card game about the climate change-related
+              stressors on arctic ecosystems. During graduate study at Columbia University,
+              I worked on the design team for Dr. Joey Lee and the POLAR research group.
+              Ecochains is available for order!
+            </p>
+            <a class="card__link" href="https://thepolarhub.org/core-projects/ecochains.html" target="_blank" rel="noopener">
+              Ecochains homepage
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__media">
+            <img src="assets/img/food-fight.png" alt="Food Fight two-player ecosystem simulation gameplay" loading="lazy" width="578" height="432">
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Food Fight</h3>
+            <p class="card__text">
+              Food Fight is a two-player game about ecosystems. Players take turns adding
+              plants and animals to a simulated ecosystem, performing targeted experiments
+              while they seek to maximize their chosen animal's population. I was a member
+              of the production team.
+            </p>
+            <a class="card__link" href="https://www.brainpop.com/games/foodfight/" target="_blank" rel="noopener">
+              Play
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__media">
+            <img src="assets/img/greenify.png" alt="Greenify mobile sustainability game interface" loading="lazy" width="385" height="211">
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Greenify</h3>
+            <p class="card__text">
+              Greenify is a mobile real-world action game that fosters sustainability and
+              learning through real world actions, allowing players to meaningfully address
+              climate change in their day-to-day lives. I worked on the design team as a
+              graduate assistant of Dr. Joey Lee at Columbia University.
+            </p>
+            <a class="card__link" href="https://ccnmtl.github.io/polarhub/core_projects/greenify.html" target="_blank" rel="noopener">
+              Greenify homepage
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__media">
+            <img src="assets/img/sortify.png" alt="Sortify assessment game board with sortable topic tiles" loading="lazy" width="952" height="658">
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Sortify</h3>
+            <p class="card__text">
+              Sortify is an assessment game spanning 50+ BrainPOP movie topics. Our team of
+              instructional designers created the game concept, built-in assessment
+              collection and teacher dashboard for classroom analytics. I managed the team
+              during development, led iterative design sprints, and managed artists and
+              writers in content production.
+            </p>
+            <a class="card__link" href="https://www.brainpop.com/games/sortify/" target="_blank" rel="noopener">
+              Play
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__media">
+            <img src="assets/img/gameup.png" alt="BrainPOP GameUp collection of educational games" loading="lazy" width="449" height="292">
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">GameUp</h3>
+            <p class="card__text">
+              BrainPOP's GameUp is a collection of 100+ educational games with standards
+              alignments, lesson plans, and animated movies on related topics. I curated the
+              collection of third-party titles, evaluating educational efficacy and
+              coordinating with NGO, university, and corporate partners to host the games on
+              GameUp.
+            </p>
+            <a class="card__link" href="https://www.brainpop.com/games/" target="_blank" rel="noopener">
+              GameUp homepage
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Writing ================= -->
+  <section class="section" id="writing">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <span class="section__kicker">Designs and thoughts</span>
+        <h2 class="section__title">Writing</h2>
+        <p class="section__sub">Notes on design, play and the things worth building.</p>
+      </div>
+
+      <div class="posts">
+        <a class="post-card reveal" href="writing/crowd-participation-in-live-improv-event.html">
+          <div class="post-card__thumb">
+            <img src="assets/img/post-improv.jpg" alt="A crowd taking part in a live improv music event" loading="lazy">
+          </div>
+          <div>
+            <div class="post-card__date">Jul 21, 2021</div>
+            <h3 class="post-card__title">Crowd Participation in Live Improv Event</h3>
+            <p class="post-card__excerpt">
+              Listening to music is fun. Making music is more fun. Making music with a big
+              crowd of people? It's the best!
+            </p>
+          </div>
+        </a>
+
+        <a class="post-card reveal" href="writing/brainpops-time-zone-x.html">
+          <div class="post-card__thumb">
+            <img src="assets/img/post-timezonex.png" alt="BrainPOP's Time Zone X key art" loading="lazy">
+          </div>
+          <div>
+            <div class="post-card__date">Jul 13, 2017</div>
+            <h3 class="post-card__title">BrainPOP's Time Zone X</h3>
+            <p class="post-card__excerpt">
+              I designed Time Zone X and managed its production while an employee at
+              BrainPOP &mdash; plus the conference paper on play and learning.
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Experience ================= -->
+  <section class="section section--sunken" id="experience">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <span class="section__kicker">Background</span>
+        <h2 class="section__title">Experience &amp; education</h2>
+      </div>
+
+      <div class="cols">
+        <div class="reveal">
+          <h3 class="col__label">Experience</h3>
+          <ol class="tl">
+            <li class="tl__item">
+              <div class="tl__role">Founder &amp; CEO, Pangea Chat</div>
+              <div class="tl__meta">April 2017 &ndash; Present</div>
+              <p class="tl__desc">
+                Designed and developed hybrid mobile application. Recruited and managed team
+                of part-time developers working for equity stake. Stack: Ionic, Cordova,
+                Node.js, Heroku, MongoDB, Socket.io, Express.
+              </p>
+            </li>
+            <li class="tl__item">
+              <div class="tl__role">Founder and Designer, LearnPlay Games</div>
+              <div class="tl__meta">August 2015 &ndash; June 2018</div>
+              <p class="tl__desc">
+                Assembled and led design and development teams from Columbia University
+                colleagues. Instructional design consulting for clients including BrainPOP,
+                Nickelodeon, Brown Institute and Experiences Unlimited. Designed game to
+                teach Weiqi through AI tutor that improves with learner for peer-to-peer
+                plus one system.
+              </p>
+            </li>
+            <li class="tl__item">
+              <div class="tl__role">Instructional Designer, BrainPOP</div>
+              <div class="tl__meta">August 2011 &ndash; August 2016</div>
+              <p class="tl__desc">
+                Designed educational games and integrated assessment systems. Curated
+                collection of 100+ third-party titles. Managed teams of developers, writers,
+                and artists.
+              </p>
+            </li>
+          </ol>
+        </div>
+
+        <div class="reveal">
+          <h3 class="col__label">Education</h3>
+          <ol class="tl">
+            <li class="tl__item">
+              <div class="tl__role">M.A. Instructional Technology and Media, Columbia University</div>
+              <div class="tl__meta">Fall 2011 &ndash; Spring 2013</div>
+              <p class="tl__desc">
+                Studied the role of instructional technology in formal and informal
+                education, cognitive and neuro-science, web development, and application
+                design. Worked as graduate assistant and published several research
+                articles.
+              </p>
+            </li>
+            <li class="tl__item">
+              <div class="tl__role">B.S. Applied Mathematics, William and Mary</div>
+              <div class="tl__meta">Fall 2005 &ndash; Spring 2010</div>
+              <p class="tl__desc">
+                Published work in the Journal of Theoretical Biology, <em>Bistability in a
+                differential equation model of oyster reef height and sediment
+                accumulation</em>.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= About ================= -->
+  <section class="section" id="about">
+    <div class="wrap">
+      <div class="about">
+        <div class="about__photo reveal">
+          <img src="assets/img/profile.jpg" alt="Portrait of Will Jordan-Cooley" loading="lazy" width="600" height="600">
+        </div>
+
+        <div class="reveal">
+          <span class="section__kicker">About</span>
+          <p class="about__quote">
+            Using cognitive science, game design and technology, I create intelligent and
+            engaging learning environments.
+          </p>
+          <p class="about__body">
+            The best of days are spent making something! With code, an instrument, Figma,
+            just words, or LEGO, I love to go where we forget food and sleep.
+          </p>
+          <p class="about__body">
+            These days that means one thing: I'm full-time as founder and CEO of Pangea
+            Chat, and not taking on consulting or outside projects.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Contact ================= -->
+  <section class="section section--sunken" id="contact">
+    <div class="wrap">
+      <div class="contact">
+        <div class="reveal">
+          <span class="section__kicker">Contact</span>
+          <h2 class="section__title">Get in touch</h2>
+          <p class="section__sub">
+            I'm not taking on consulting or outside projects &mdash; Pangea Chat has all of
+            my time. But I'm always glad to hear from teachers, researchers and anyone
+            building in this space.
+          </p>
+          <p class="contact__note">
+            Messages land in my inbox directly. I read everything, though replies can take
+            a little while.
+          </p>
+        </div>
+
+        <!-- The action is a form-relay endpoint; swap FORM_ENDPOINT_HERE for the real
+             one (see README). The JS below posts via fetch and falls back to a normal
+             form POST if JS is unavailable. -->
+        <form class="form reveal"
+              id="contactForm"
+              action="FORM_ENDPOINT_HERE"
+              method="POST">
+          <div class="field-row">
+            <div class="field">
+              <label for="firstName">First name</label>
+              <input type="text" id="firstName" name="firstName" autocomplete="given-name" required>
+            </div>
+            <div class="field">
+              <label for="lastName">Last name</label>
+              <input type="text" id="lastName" name="lastName" autocomplete="family-name">
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </div>
+
+          <div class="field">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="_subject">
+          </div>
+
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Leave a message&hellip;" required></textarea>
+          </div>
+
+          <!-- Honeypot: real people never see or fill this. -->
+          <div class="hp" aria-hidden="true">
+            <label for="company">Company (leave blank)</label>
+            <input type="text" id="company" name="_gotcha" tabindex="-1" autocomplete="off">
+          </div>
+
+          <div class="form__foot">
+            <button class="btn btn--primary" type="submit" id="contactSubmit">
+              <span data-label>Send message</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+          </div>
+
+          <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <p>&copy; <span id="year">2026</span> Will Jordan-Cooley</p>
+    <div class="footer__social">
+      <a class="icon-btn" href="https://www.linkedin.com/in/jordan-cooley/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.75V21h-4v-5.6c0-1.33-.03-3.05-1.9-3.05-1.9 0-2.2 1.45-2.2 2.95V21h-4z"/></svg>
+      </a>
+      <a class="icon-btn" href="https://www.facebook.com/wjordancooley" target="_blank" rel="noopener" aria-label="Facebook">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12z"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
