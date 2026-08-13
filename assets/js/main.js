@@ -1,4 +1,4 @@
-/* Will Jordan-Cooley — site behaviour. No dependencies. */
+/* Will Jordan-Cooley, site behaviour. No dependencies. */
 (function () {
   "use strict";
 
@@ -10,7 +10,7 @@
     toggle.addEventListener("click", function () {
       var current = root.getAttribute("data-theme");
       if (!current) {
-        // No explicit choice yet — flip away from whatever the OS is giving us.
+        // No explicit choice yet, so flip away from whatever the OS is giving us.
         var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         current = prefersDark ? "dark" : "light";
       }
@@ -92,54 +92,6 @@
     );
     sections.forEach(function (s) {
       spy.observe(s);
-    });
-  }
-
-  /* ---------- Contact form ---------- */
-  /* Posts to the relay endpoint in the form's action via fetch, so the visitor
-     stays on the page. With JS off, the browser does a normal POST and the
-     relay shows its own confirmation page — the form still works either way. */
-  var form = document.getElementById("contactForm");
-  if (form && form.getAttribute("action").indexOf("FORM_ENDPOINT") === -1) {
-    var status = document.getElementById("formStatus");
-    var submit = document.getElementById("contactSubmit");
-    var label = submit && submit.querySelector("[data-label]");
-    var labelText = label ? label.textContent : "";
-
-    var setStatus = function (state, text) {
-      if (!status) return;
-      status.setAttribute("data-state", state);
-      status.textContent = text;
-    };
-
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-      if (!form.reportValidity()) return;
-
-      setStatus("", "");
-      if (submit) submit.setAttribute("aria-busy", "true");
-      if (label) label.textContent = "Sending…";
-
-      fetch(form.action, {
-        method: "POST",
-        body: new FormData(form),
-        headers: { Accept: "application/json" },
-      })
-        .then(function (res) {
-          if (!res.ok) throw new Error("HTTP " + res.status);
-          form.reset();
-          setStatus("ok", "Thanks — your message is on its way. I'll get back to you.");
-        })
-        .catch(function () {
-          setStatus(
-            "error",
-            "Something went wrong sending that. Please try again in a moment."
-          );
-        })
-        .then(function () {
-          if (submit) submit.removeAttribute("aria-busy");
-          if (label) label.textContent = labelText;
-        });
     });
   }
 
