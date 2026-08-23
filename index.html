@@ -40,7 +40,6 @@
     <nav aria-label="Primary">
       <ul class="nav__links" id="navLinks">
         <li><a href="#work">Work</a></li>
-        <li><a href="#writing">Writing</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#about">About</a></li>
       </ul>
@@ -71,20 +70,6 @@
         Blending cognitive science, game design and technology to create
         next-generation learning systems.
       </p>
-
-      <p class="hero__sub">
-        I'm full-time on Pangea Chat, an AI-guided language learning environment built on
-        the Matrix protocol. Before that I designed educational games at BrainPOP,
-        including Time Zone X, Sortify and Guts and Bolts, and curated GameUp.
-      </p>
-
-      <div class="btn-row">
-        <a class="btn btn--primary" href="https://www.pangeachat.com/" target="_blank" rel="noopener">
-          Try Pangea Chat
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
-        </a>
-        <a class="btn btn--ghost" href="#work">See earlier work</a>
-      </div>
 
       <div class="stats">
         <div class="stat">
@@ -303,7 +288,13 @@
     </div>
   </section>
 
-  <!-- ================= Writing ================= -->
+  <!-- ================= Writing (HIDDEN) ================= -->
+  <!-- Hidden for now: too sparse with only two posts. To restore, delete the
+       two comment markers around this section, re-add
+       <li><a href="#writing">Writing</a></li> to the nav, and put
+       section--sunken back on the Experience section so the tints alternate.
+       The two article pages under writing/ stay published either way. -->
+  <!--
   <section class="section" id="writing">
     <div class="wrap">
       <div class="section__head reveal">
@@ -343,9 +334,10 @@
       </div>
     </div>
   </section>
+  -->
 
   <!-- ================= Experience ================= -->
-  <section class="section section--sunken" id="experience">
+  <section class="section" id="experience">
     <div class="wrap">
       <div class="section__head reveal">
         <span class="section__kicker">Background</span>
